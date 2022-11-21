@@ -20,4 +20,9 @@ Springboot kotlin reference application. Data of USA presidents.
 
 Run container
 
-`docker run -p 8080:8080 presidents/app `
+`docker run -p 8080:8080 presidents/app`
+
+## Verify
+
+- `curl http://localhost:8080/presidents`
+- `curl http://localhost:8080/presidents/homepage`
