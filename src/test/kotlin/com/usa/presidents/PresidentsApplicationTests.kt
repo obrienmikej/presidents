@@ -33,7 +33,7 @@ class presidentsApplicationTests(
   }
 
   @Test
-  fun `Assert POTUS detail endpoint with id gives an President`() {
+  fun `Assert POTUS detail endpoint with id gives a President`() {
     mockMvc.get("/presidents/1")
       .andExpect {
         status { isOk() }
@@ -43,7 +43,7 @@ class presidentsApplicationTests(
   }
 
   @Test
-  fun `Assert we can update an POTUS`() {
+  fun `Assert we can update a President`() {
     mockMvc.get("/presidents/1")
       .andExpect {
         status { isOk() }
