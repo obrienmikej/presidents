@@ -31,7 +31,7 @@ class PresidentsController {
   fun getPOTUSs() = POTUSs
 
   @GetMapping("/homepage")
-  fun getHomePage() = "Presidents App homepage"  
+  fun getHomePage() = "Data of USA Presidents"
   
   @GetMapping("/{id}")
   fun getPOTUSById(@PathVariable id: Int): POTUS {
