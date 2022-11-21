@@ -8,6 +8,16 @@ Springboot kotlin reference application. Data of USA presidents.
 - project = `grade project`
 - language = `kotlin`
 - spring boot = `2.7.5`
-- packaging = `war`
+- packaging = `jar`
 - java = `17`
 - dependencies = `Spring Web`
+
+## Docker
+
+- Manual steps (no scripts yet) to build and run container
+
+`docker build -t presidents/app .`
+
+Run container
+
+`docker run -p 8080:8080 presidents/app `
