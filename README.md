@@ -32,7 +32,7 @@ Run container
 
 - POST (add new President)
 
-`curl -H "Content-Type: application/json" --request POST --data '{"name": "< update name>", "party": "<update party>"}' http://localhost:8080/presidents`
+`curl -H "Content-Type: application/json" --request POST --data '{"name": "<update name>", "party": "<update party>"}' http://localhost:8080/presidents`
 
 - GET (find existing President)
 
@@ -49,3 +49,7 @@ Run container
 - GET (all data)
 
 `curl http://localhost:8080/presidents`
+
+- DELETE (existing President)
+
+~ `curl -X DELETE http://localhost:8080/presidents/<unique id>`
