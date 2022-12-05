@@ -1,6 +1,6 @@
 # Overview
 
-Springboot kotlin reference application. Data of USA presidents.
+Springboot kotlin reference application. Data of USA presidents (data set presidents 1 to 5)
 
 ## Initialized with the settings
 
@@ -16,11 +16,15 @@ Springboot kotlin reference application. Data of USA presidents.
 
 Manual steps (no scripts yet) to build and run container
 
-`docker build -t presidents/app .`
+`docker build -t presidents .`
 
-Run container
+Run container - Interactive mode
 
-`docker run -p 8080:8080 presidents/app`
+`docker run -p 8080:8080 -it presidents`
+
+Run container - detached mode
+
+`docker run -p 8080:8080 -d presidents`
 
 ## Verify
 
