@@ -5,7 +5,7 @@ Springboot kotlin reference application. Data of USA presidents (data set presid
 ## Initialized with the settings
 
 - [Spring initializer](https://start.spring.io)
-- project = `grade project`
+- project = `gradle project`
 - language = `kotlin`
 - spring boot = `2.7.5`
 - packaging = `jar`
