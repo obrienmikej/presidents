@@ -2,10 +2,10 @@ package com.usa.presidents.middleware
 
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Component
-import javax.servlet.Filter
-import javax.servlet.FilterChain
-import javax.servlet.ServletRequest
-import javax.servlet.ServletResponse
+import jakarta.servlet.Filter
+import jakarta.servlet.FilterChain
+import jakarta.servlet.ServletRequest
+import jakarta.servlet.ServletResponse
 
 @Component
 class RequestLoggingFilter : Filter {
