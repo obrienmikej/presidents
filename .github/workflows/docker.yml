@@ -36,7 +36,7 @@ jobs:
         images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
     #TODO write GHA to publish and build app jar file  
-        - name: Set up JDK 17
+    - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
         distribution: 'adopt'
