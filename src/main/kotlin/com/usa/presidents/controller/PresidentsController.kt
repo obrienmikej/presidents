@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/presidents")
-class PresidentsController {
 
+class PresidentsController {
   private var POTUSs = mutableListOf(
     POTUS(1, "George Washington", "Unaffiliated"),
     POTUS(2, "John Adams", "Federalist"),
