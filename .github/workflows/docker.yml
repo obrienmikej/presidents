@@ -27,9 +27,6 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build         
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-
       - name: Get commit SHA
         id: get_commit_sha
         run: echo "::set-output name=sha::$(git rev-parse --short HEAD)"
