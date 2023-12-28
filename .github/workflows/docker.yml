@@ -29,6 +29,9 @@ jobs:
       uses: docker/metadata-action@v5
       with:
         images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+        tags: |
+          type=ref,event=branch
+          type=sha
 
 #TODO write GHA to publish and build app jar file  
     - name: Set up JDK 17
