@@ -34,7 +34,11 @@ Springboot kotlin reference application. Data of USA presidents (data set presid
 
 ### Access
 
+- GET (all data)
+
 `curl http://localhost:8080/presidents`
+
+- GET homepage
 
 `curl http://localhost:8080/presidents/homepage`
 
@@ -51,14 +55,6 @@ Springboot kotlin reference application. Data of USA presidents (data set presid
 - GET with filter (find existing President)
 
 `curl "http://localhost:8080/presidents/<unique id>?utm_source=usa"`
-
-- GET homepage
-
-`curl http://localhost:8080/presidents/homepage`
-
-- GET (all data)
-
-`curl http://localhost:8080/presidents`
 
 - DELETE (existing President)
 
