@@ -68,9 +68,9 @@ Springboot kotlin reference application. Data of USA presidents (data set presid
 
 - Get info
 
-`curl http://localhost:8080/presidents/actuator/info`
+`curl http://localhost:8080/presidents/info`
 
 - Get health
 
-`curl http://localhost:8080/presidents/actuator/health`
+`curl http://localhost:8080/presidents/health`
 
