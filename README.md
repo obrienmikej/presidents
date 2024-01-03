@@ -6,21 +6,33 @@ Springboot kotlin reference application. Data of USA presidents (data set presid
 
 - [Spring initializer](https://start.spring.io)
 
-## Docker
+## Run Application
 
-Manual steps (no scripts yet) to build and run container
+### Gradle Tasks
 
-`docker build -t presidents .`
+- Application | bootrun
 
-Run container - Interactive mode
+### Docker Manual Steps Locally
 
-`docker run -p 8080:8080 -it presidents`
+#### Pull image from Github Packages
 
-Run container - detached mode
+- `docker pull ghcr.io/obrienmikej/presidents:main`
 
-`docker run -p 8080:8080 -d presidents`
+#### Build and run container
 
-## Verify
+- `docker build -t presidents .`
+
+#### Run container - Interactive mode
+
+- `docker run -p 8080:8080 -it presidents`
+
+####  Run container - detached mode
+
+- `docker run -p 8080:8080 -d presidents`
+
+## Application
+
+### Access
 
 `curl http://localhost:8080/presidents`
 
@@ -51,3 +63,14 @@ Run container - detached mode
 - DELETE (existing President)
 
 ~ `curl -X DELETE http://localhost:8080/presidents/<unique id>`
+
+## Actuator
+
+- Get info
+
+`curl http://localhost:8080/presidents/actuator/info`
+
+- Get health
+
+`curl http://localhost:8080/presidents/actuator/health`
+
