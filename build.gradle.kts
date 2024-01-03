@@ -8,7 +8,7 @@ plugins {
 	kotlin("plugin.spring") version "1.9.20"
 }
 
-group = "com.usa.presidents"
+group = "com.usa"
 version = "0.0.1-SNAPSHOT"
 
 java {
